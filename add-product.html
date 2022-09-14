@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/add-product.css" />
+    <title>Add Product</title>
+  </head>
+  <body>
+    <!-- Navigation -->
+
+    <nav>
+      <div class="logo"><img src="images/good taste.png" alt="logo" /></div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="login.html" class="logout">Log out</a></li>
+      </ul>
+      <i id="navBtn" class="fa fa-bars"></i>
+    </nav>
+
+    <!-- End Navigation -->
+
+    <div class="wrapper">
+      <!-- Add Product Form -->
+      <div class="heading">Add Product</div>
+      <form>
+        <div class="image">
+          <div class="btn">Browse Files</div>
+        </div>
+        <div class="form-body">
+          <div class="input">
+            <div class="input-heading">Product Name</div>
+            <input placeholder="eg. pepperoni pizza" type="text" />
+          </div>
+          <div class="input">
+            <div class="input-heading">Category</div>
+            <input placeholder="eg. meat, pizza, etc" type="text" />
+          </div>
+          <div class="input">
+            <div class="input-heading">Price</div>
+            <input type="text" />
+          </div>
+          <div class="input">
+            <div class="input-heading">Description</div>
+            <textarea type="text"></textarea>
+          </div>
+        </div>
+        <input class="submit" type="submit" />
+      </form>
+      <!-- End Add Product Form -->
+    </div>
+  </body>
+</html>

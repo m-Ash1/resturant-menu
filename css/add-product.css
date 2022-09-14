@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Belleza&family=Nunito:wght@200;300;400&display=swap");
+
+body {
+  background-color: #fafafa;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #111111;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.3em 5vw;
+  background-color: #fff;
+  z-index: 10;
+  position: sticky;
+  top: 0;
+  transition: 0.3s;
+  font-family: "Belleza", sans-serif;
+}
+nav #navBtn {
+  display: none;
+}
+.scrolled {
+  box-shadow: 0px 3px 19px -7px rgb(0 0 0 / 10%);
+  padding: 0 5vw;
+}
+.logo {
+  width: 100px;
+}
+.logo img {
+  width: 100%;
+}
+nav .nav-links {
+  display: flex;
+  list-style: none;
+}
+nav .nav-links li {
+  margin: 0 1em;
+}
+nav .nav-links li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.nav-links .logout {
+  color: #d7bdca;
+}
+
+.wrapper {
+  display: flex;
+  height: 75vh;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 4em;
+}
+.heading {
+  margin-bottom: 2em;
+  font-size: 1.5em;
+  font-weight: bold;
+  font-family: "Belleza", sans-serif;
+}
+form {
+  width: 50em;
+}
+.image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 13em;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 12px -7px rgb(0 0 0 / 10%);
+  margin-bottom: 2em;
+}
+
+.btn {
+  padding: 1em 2em;
+  border: 1px solid #11111121;
+  color: #111111;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+.btn:hover {
+  color: white;
+  background-color: #111111;
+}
+
+.form-body {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+  gap: 1.5em;
+}
+.input-heading {
+  font-size: 1em;
+  font-weight: bold;
+  font-family: "Belleza", sans-serif;
+  margin-bottom: 0.8em;
+}
+.input:last-child {
+  grid-row: 3;
+  grid-column: span 2;
+}
+.input textarea {
+  height: 100px;
+}
+.input input,
+.input textarea {
+  width: 98%;
+  border: none;
+  outline: none;
+  padding: 1em 0 1em 1em;
+  border-radius: 5px;
+  box-shadow: 0px 1px 8px -2px rgb(0 0 0 / 10%);
+  resize: none;
+}
+input::placeholder{
+  opacity: 0.5;
+}
+.submit {
+  display: flex;
+  padding: 1em;
+  width: 100%;
+  justify-content: center;
+  margin-top: 2em;
+  background-color: #111111;
+  color: white;
+  font-family: "Belleza", sans-serif;
+  border-radius: 7px;
+  border: none;
+  transition: 0.3s;
+}
+.submit:hover {
+  background-color: white;
+  color: #111111;
+  cursor: pointer;
+}
