@@ -54,10 +54,10 @@ nav .nav-links li a {
 
 .wrapper {
   display: flex;
-  height: calc(100vh - 150px);
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  padding: 1em 0 0 0;
 }
 .heading {
   margin-bottom: 2em;
@@ -150,4 +150,25 @@ input::placeholder {
   background-color: white;
   color: #111111;
   cursor: pointer;
+}
+
+@media (max-width: 574px) {
+  form {
+    width: 400px;
+  }
+  .wrapper {
+    padding: 3em 1em;
+  }
+  .input:last-child {
+    grid-row: 4;
+    grid-column: span 1;
+  }
+  nav {
+    display: none;
+  }
+}
+@media (max-width: 376px) {
+  form {
+    width: 300px;
+  }
 }
