@@ -152,7 +152,7 @@ input::placeholder {
   cursor: pointer;
 }
 
-@media (max-width: 574px) {
+@media (max-width: 575px) {
   form {
     width: 400px;
   }
@@ -167,7 +167,12 @@ input::placeholder {
     display: none;
   }
 }
-@media (max-width: 376px) {
+@media (max-width: 475px) {
+  form {
+    width: 350px;
+  }
+}
+@media (max-width: 375px) {
   form {
     width: 300px;
   }
